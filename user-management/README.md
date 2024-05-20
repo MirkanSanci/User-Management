@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+User Management
+Bu proje, kullanıcıların eklenmesini, düzenlenmesini ve silinmesini sağlayan bir kullanıcı yönetim sistemi uygulamasıdır. React ve Material-UI kullanılarak geliştirilmiştir.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Başlangıç
+Gereksinimler
+Bu projeyi çalıştırmak için aşağıdaki yazılımların sisteminizde kurulu olması gerekmektedir:
+Node.js
+npm veya yarn 
 
-## Available Scripts
+Gerekli bağımlılıkları yükleyin:
+npm install
 
-In the project directory, you can run:
+Projeyi başlatın:
+npm start
 
-### `npm start`
+Kullanım
+Uygulama, kullanıcı ekleme, düzenleme ve silme işlemlerini yapmanıza olanak tanır. Ayrıca kullanıcıları rol bazlı olarak filtreleyebilir ve arama yapabilirsiniz.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Özellikler
+Kullanıcı Ekleme: Yeni kullanıcı ekleyebilirsiniz.
+Kullanıcı Düzenleme: Var olan kullanıcı bilgilerini güncelleyebilirsiniz.
+Kullanıcı Silme: Kullanıcıları silebilirsiniz.
+Filtreleme: Kullanıcıları rol bazında filtreleyebilirsiniz.
+Arama: Kullanıcıları isim, kullanıcı adı veya e-posta adresine göre arayabilirsiniz.
+Toplu Silme: Seçili kullanıcıları veya tüm kullanıcıları toplu olarak silebilirsiniz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Kullanıcı Arayüzü
+Kullanıcı Tablosu: Kullanıcıların listelendiği tablodur. Her kullanıcı için avatar, isim, kullanıcı adı, e-posta ve rol bilgileri görüntülenir.
+Kullanıcı Formu: Yeni kullanıcı eklemek veya mevcut kullanıcıyı düzenlemek için kullanılan formdur.
+Filtreleme ve Arama: Kullanıcıları rol bazlı filtrelemek ve aramak için üst kısımda bulunan araçları kullanabilirsiniz.
+Toplu Silme İşlemleri: Seçili kullanıcıları veya tüm kullanıcıları toplu olarak silmek için üst kısımda bulunan butonları kullanabilirsiniz.
 
-### `npm test`
+Proje Yapısı
+src/components/UserForm.js
+Kullanıcı ekleme ve düzenleme işlemlerinin yapıldığı form bileşeni.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/components/UserTable.js
+Kullanıcıların listelendiği ve çeşitli işlemlerin yapıldığı tablo bileşeni.
 
-### `npm run build`
+src/pages/UserManagement.js
+Kullanıcı yönetimi sayfası. Kullanıcıların listelenmesi ve form bileşenlerinin bulunduğu ana bileşen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/App.js
+Uygulamanın ana bileşeni. Kullanıcı yönetimi sayfasını içerir.
